@@ -1,0 +1,23 @@
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2008
+
+Project("{B1A0B0DF-BF39-F712-BB87-5B5ED1984612}") = "RX-Mania", "Assembly-CSharp.csproj", "{EAFA461B-31F0-C50E-D2EB-35B5FE745E8A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EAFA461B-31F0-C50E-D2EB-35B5FE745E8A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EAFA461B-31F0-C50E-D2EB-35B5FE745E8A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EAFA461B-31F0-C50E-D2EB-35B5FE745E8A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EAFA461B-31F0-C50E-D2EB-35B5FE745E8A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = Assembly-CSharp.csproj
+	EndGlobalSection
+EndGlobal
