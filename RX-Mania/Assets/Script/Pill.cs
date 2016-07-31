@@ -6,7 +6,7 @@ using UnityEngine;
 using UnityEngine.UI; 
 
 namespace RX {
-    public class Pill : MonoBehaviour {
+    public class Pill : GridItem {
         public enum PillType {
             PillRed,
             PillBlue,
@@ -18,7 +18,7 @@ namespace RX {
         private Image image;
         public PillType type;
         public float mouseOverOpacity = 0.5f;
-        public Color selectColor;
+        public Color selectedColor = new Color(0f,1f,0f);
         public bool selected = false; 
         
         //Grid Positioning
@@ -35,6 +35,11 @@ namespace RX {
             }
         }
 
+        public void SetPosition(int x, int y) {
+            _gridX = x; 
+            _gridY = y; 
+        }//SetPosition
+
         private void Awake() {
             image = GetComponent<Image>();
         }//Awake
@@ -44,11 +49,19 @@ namespace RX {
         }//Refresh
 
         public void OnPointerUp() {
-            selected = !selected; 
-            image.color = selected ? selectColor : new Color(1f,1f,1f);
+            Top.gameHandler.EndSelectDrag();
         }//OnPointerUp
 
+        public void OnPointerDown() {
+            Top.gameHandler.BeginSelectDrag(); 
+            AddPill();
+        }//OnPointerDrag
+
         public void OnPointerEnter() {
+            if (Top.gameHandler.selectionDragActive) {
+                AddPill();
+            }
+
             image.color = new Color(
                 image.color.r,
                 image.color.g,
@@ -63,5 +76,21 @@ namespace RX {
                 image.color.b,
                 1f);
         }//OnPointerExit
+
+        public void Deselect() {
+            image.color = new Color(1f,1f,1f);
+            selected = false; 
+        }//Deselect
+
+        public void Use() {
+
+        }//Use
+
+        private void AddPill() {
+            if (Top.gameHandler.AddPill(this)) {
+                selected = true;
+                image.color = selectedColor;
+            }
+        }//AddPill
     }//Pill
 }//RX

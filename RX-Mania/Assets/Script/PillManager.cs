@@ -32,6 +32,7 @@ namespace RX {
             Pill p = (Pill)GameObject.Instantiate(pillPrefab);
             int pillType = Random.Range(0,PILL_NORMAL_COUNT);
             p.Refresh(graphics[pillType].sprite);
+            p.type = graphics[pillType].type; 
             return p;
         }//GetPill
 
