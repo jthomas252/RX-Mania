@@ -48,6 +48,10 @@
      <Compile Include="Assets\Script\AudioHandler.cs" />
      <Compile Include="Assets\Script\GameHandler.cs" />
      <Compile Include="Assets\Script\GameInit.cs" />
+     <Compile Include="Assets\Script\Grid.cs" />
+     <Compile Include="Assets\Script\Pill.cs" />
+     <Compile Include="Assets\Script\PillManager.cs" />
+     <Compile Include="Assets\Script\Top.cs" />
      <Compile Include="Assets\Script\UIHandler.cs" />
      <None Include="Assets\Shader\UnlitColor.shader" />
  <Reference Include="UnityEngine.UI">

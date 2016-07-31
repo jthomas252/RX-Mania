@@ -5,10 +5,10 @@ using System.Text;
 using UnityEngine;
 
 namespace RX {
-    class GameInit {
-
+    public class GameInit:MonoBehaviour {
         public void Awake() {
-
+            Top.InitValues(); 
+            Destroy(gameObject);
         }//Awake
     }//GameInit
 }//RX
