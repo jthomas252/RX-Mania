@@ -1,11 +1,12 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <RootNamespace></RootNamespace>
+    <RootNamespace>
+    </RootNamespace>
     <ProjectGuid>{EAFA461B-31F0-C50E-D2EB-35B5FE745E8A}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
@@ -45,30 +46,31 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Script\Disease.cs" />
-     <Compile Include="Assets\Script\Grid.cs" />
-     <Compile Include="Assets\Script\GridItem.cs" />
-     <Compile Include="Assets\Script\Handler\AudioHandler.cs" />
-     <Compile Include="Assets\Script\Handler\GameHandler.cs" />
-     <Compile Include="Assets\Script\Handler\UIHandler.cs" />
-     <Compile Include="Assets\Script\Pill.cs" />
-     <Compile Include="Assets\Script\PillManager.cs" />
-     <Compile Include="Assets\Script\UI\CreditsMenu.cs" />
-     <Compile Include="Assets\Script\UI\GameOptions.cs" />
-     <Compile Include="Assets\Script\UI\GameUI.cs" />
-     <Compile Include="Assets\Script\UI\MainMenu.cs" />
-     <Compile Include="Assets\Script\UI\Pause.cs" />
-     <Compile Include="Assets\Script\Utility\DiseaseNameGenerator.cs" />
-     <Compile Include="Assets\Script\Utility\GameInit.cs" />
-     <Compile Include="Assets\Script\Utility\Top.cs" />
-     <Compile Include="Assets\Script\Virus.cs" />
-     <None Include="Assets\Shader\UnlitColor.shader" />
- <Reference Include="UnityEngine.UI">
- <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.Networking">
- <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
- </Reference>
+    <Compile Include="Assets\Script\Disease.cs" />
+    <Compile Include="Assets\Script\Grid.cs" />
+    <Compile Include="Assets\Script\GridItem.cs" />
+    <Compile Include="Assets\Script\Handler\AudioHandler.cs" />
+    <Compile Include="Assets\Script\Handler\GameHandler.cs" />
+    <Compile Include="Assets\Script\Handler\UIHandler.cs" />
+    <Compile Include="Assets\Script\Pill.cs" />
+    <Compile Include="Assets\Script\PillManager.cs" />
+    <Compile Include="Assets\Script\UI\CreditsMenu.cs" />
+    <Compile Include="Assets\Script\UI\GameOptions.cs" />
+    <Compile Include="Assets\Script\UI\GameOver.cs" />
+    <Compile Include="Assets\Script\UI\GameUI.cs" />
+    <Compile Include="Assets\Script\UI\MainMenu.cs" />
+    <Compile Include="Assets\Script\UI\Pause.cs" />
+    <Compile Include="Assets\Script\Utility\DiseaseNameGenerator.cs" />
+    <Compile Include="Assets\Script\Utility\GameInit.cs" />
+    <Compile Include="Assets\Script\Utility\Top.cs" />
+    <Compile Include="Assets\Script\Virus.cs" />
+    <None Include="Assets\Shader\UnlitColor.shader" />
+    <Reference Include="UnityEngine.UI">
+      <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Networking">
+      <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
@@ -78,5 +80,4 @@
   <Target Name="AfterBuild">
   </Target>
   -->
-  
 </Project>

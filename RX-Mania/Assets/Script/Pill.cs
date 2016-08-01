@@ -16,29 +16,16 @@ namespace RX {
             PillPlacebo
         }
         private Image image;
+        private bool _unused = true;
+        public bool unused {
+            get {
+                return _unused; 
+            }
+        }
         public PillType type;
         public float mouseOverOpacity = 0.5f;
         public Color selectedColor = new Color(0f,1f,0f);
         public bool selected = false; 
-        
-        //Grid Positioning
-        private int _gridX = 0;
-        public int gridX {
-            get {
-                return _gridX; 
-            }
-        }
-        private int _gridY = 0;
-        public int gridY {
-            get {
-                return _gridY; 
-            }
-        }
-
-        public void SetPosition(int x, int y) {
-            _gridX = x; 
-            _gridY = y; 
-        }//SetPosition
 
         private void Awake() {
             image = GetComponent<Image>();
@@ -46,10 +33,14 @@ namespace RX {
 
         public void Refresh(Sprite sprite) {
             image.sprite = sprite; 
+            isEmpty = false; 
+            _unused = false; 
         }//Refresh
 
         public void OnPointerUp() {
-            Top.gameHandler.EndSelectDrag();
+            if (Top.gameHandler.selectionDragActive) {
+                Top.gameHandler.EndSelectDrag();
+            }
         }//OnPointerUp
 
         public void OnPointerDown() {
@@ -83,7 +74,9 @@ namespace RX {
         }//Deselect
 
         public void Use() {
-
+            _unused = true; 
+            isEmpty = true; 
+            image.sprite = null; 
         }//Use
 
         private void AddPill() {

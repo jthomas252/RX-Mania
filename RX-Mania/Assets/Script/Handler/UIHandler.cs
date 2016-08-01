@@ -9,6 +9,7 @@ namespace RX {
         private float currentTime = 0f; 
 
         public Color[] backgroundColors; 
+        public Color[] panicColors; 
         private int backgroundCurrent = 0;
         private int backgroundNext = 1;
         public float timeBetweenColor = 1.5f; 
@@ -16,7 +17,12 @@ namespace RX {
         public float backgroundScrollSpeedPerFrame = 0.1f;
         public bool scrollLeft = true; 
         public bool scrollUp = true;
-        public MeshRenderer background; 
+        public MeshRenderer background;
+        public bool usePanicColors = false; 
+
+        public void Init() {
+
+        }//Init
 
         public void Update() {
             IterateBackground(); 
@@ -33,20 +39,39 @@ namespace RX {
             background.material.mainTextureOffset += new Vector2(
                 scrollLeft ? backgroundScrollSpeedPerFrame : -backgroundScrollSpeedPerFrame, 
                 scrollUp ? -backgroundScrollSpeedPerFrame : backgroundScrollSpeedPerFrame);
-            Color color = new Color(
-                Mathf.Lerp(
-                backgroundColors[backgroundCurrent].r, 
-                backgroundColors[backgroundNext].r,
-                (currentTime / timeBetweenColor)),
-                Mathf.Lerp(
-                backgroundColors[backgroundCurrent].g, 
-                backgroundColors[backgroundNext].g,
-                (currentTime / timeBetweenColor)),
-                Mathf.Lerp(
-                backgroundColors[backgroundCurrent].b, 
-                backgroundColors[backgroundNext].b,
-                (currentTime / timeBetweenColor))
-            );
+
+            Color color; 
+            if (!usePanicColors) {
+                color = new Color(
+                    Mathf.Lerp(
+                    backgroundColors[backgroundCurrent].r,
+                    backgroundColors[backgroundNext].r,
+                    (currentTime / timeBetweenColor)),
+                    Mathf.Lerp(
+                    backgroundColors[backgroundCurrent].g,
+                    backgroundColors[backgroundNext].g,
+                    (currentTime / timeBetweenColor)),
+                    Mathf.Lerp(
+                    backgroundColors[backgroundCurrent].b,
+                    backgroundColors[backgroundNext].b,
+                    (currentTime / timeBetweenColor))
+                );
+            } else {
+                color = new Color(
+                    Mathf.Lerp(
+                    panicColors[backgroundCurrent].r,
+                    panicColors[backgroundNext].r,
+                    (currentTime / timeBetweenColor)),
+                    Mathf.Lerp(
+                    panicColors[backgroundCurrent].g,
+                    panicColors[backgroundNext].g,
+                    (currentTime / timeBetweenColor)),
+                    Mathf.Lerp(
+                    panicColors[backgroundCurrent].b,
+                    panicColors[backgroundNext].b,
+                    (currentTime / timeBetweenColor))
+                );
+            }
             background.material.color = color; 
         }//IterateBackgroundColor
     }//UIHandler

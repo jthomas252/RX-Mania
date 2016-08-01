@@ -37,16 +37,19 @@ namespace RX {
             audioPlayer = GetComponent<AudioSource>();
         }//Awake
 
-        public void PlaySound(string sound) {
+        public void PlaySound(string sound, float volume = 3.25f) {
             if (soundDict.ContainsKey(sound)) {
-                audioPlayer.PlayOneShot(soundList[soundDict[sound]].Sound);
+                audioPlayer.PlayOneShot(soundList[soundDict[sound]].Sound, volume);
             }
         }//PlaySound
 
-        public void PlayMusic(string track) {
+        public void PlayMusic(string track, bool keepPosition = false) {
             if (musicDict.ContainsKey(track)) {
+                float pos = audioPlayer.time; 
+                audioPlayer.time = 0; 
                 audioPlayer.clip = musicList[musicDict[track]].Track; 
-                audioPlayer.Play(); 
+                audioPlayer.Play();
+                if (keepPosition) audioPlayer.time = pos; 
             }
         }//PlayMusic
 

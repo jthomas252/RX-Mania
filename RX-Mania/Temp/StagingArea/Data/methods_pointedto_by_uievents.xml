@@ -1,0 +1,33 @@
+<linker>
+	<assembly fullname="Assembly-CSharp">
+		<type fullname="RX.Pill">
+			<method name="OnPointerEnter"/>
+			<method name="OnPointerExit"/>
+			<method name="OnPointerUp"/>
+			<method name="OnPointerDown"/>
+		</type>
+		<type fullname="RX.Pause">
+			<method name="OnResumeButton"/>
+			<method name="OnQuitButton"/>
+		</type>
+		<type fullname="RX.GameOptions">
+			<method name="OnBackButton"/>
+			<method name="OnSlider"/>
+			<method name="OnGoButton"/>
+		</type>
+		<type fullname="RX.GameOver">
+			<method name="OnReplayButton"/>
+			<method name="OnMainMenuButton"/>
+		</type>
+		<type fullname="RX.MainMenu">
+			<method name="OnPlayButton"/>
+			<method name="OnCreditsButton"/>
+		</type>
+		<type fullname="RX.CreditsMenu">
+			<method name="OnCloseButton"/>
+		</type>
+		<type fullname="RX.GameUI">
+			<method name="OnPauseButton"/>
+		</type>
+	</assembly>
+</linker>

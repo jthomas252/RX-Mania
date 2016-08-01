@@ -7,6 +7,7 @@ using UnityEngine;
 namespace RX {
     public class GameInit:MonoBehaviour {
         public void Awake() {
+            Application.targetFrameRate = 60;
             Top.InitValues(); 
             Destroy(gameObject);
         }//Awake

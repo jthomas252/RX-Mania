@@ -35,7 +35,7 @@ TextureImporter:
   cubemapConvolutionSteps: 7
   cubemapConvolutionExponent: 1.5
   seamlessCubemap: 0
-  textureFormat: -1
+  textureFormat: -3
   maxTextureSize: 2048
   textureSettings:
     filterMode: 2
@@ -55,11 +55,14 @@ TextureImporter:
   spriteBorder: {x: 32, y: 32, z: 32, w: 32}
   spritePixelsToUnits: 100
   alphaIsTransparency: 1
+  spriteTessellationDetail: -1
   textureType: 8
   buildTargetSettings: []
   spriteSheet:
+    serializedVersion: 2
     sprites:
-    - name: GelButton-9Grid_0
+    - serializedVersion: 2
+      name: GelButton-9Grid_0
       rect:
         serializedVersion: 2
         x: 0
@@ -69,13 +72,10 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -7, y: 16}
-        - {x: -16, y: 10}
-        - {x: -16, y: -16}
-        - {x: 16, y: -16}
-        - {x: 16, y: 16}
-    - name: GelButton-9Grid_1
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: GelButton-9Grid_1
       rect:
         serializedVersion: 2
         x: 32
@@ -85,12 +85,10 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -16, y: 16}
-        - {x: -16, y: -16}
-        - {x: 16, y: -16}
-        - {x: 16, y: 16}
-    - name: GelButton-9Grid_2
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: GelButton-9Grid_2
       rect:
         serializedVersion: 2
         x: 64
@@ -100,13 +98,10 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -16, y: 16}
-        - {x: -16, y: -16}
-        - {x: 16, y: -16}
-        - {x: 16, y: 10}
-        - {x: 7, y: 16}
-    - name: GelButton-9Grid_3
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: GelButton-9Grid_3
       rect:
         serializedVersion: 2
         x: 0
@@ -116,12 +111,10 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -16, y: 16}
-        - {x: -16, y: -16}
-        - {x: 16, y: -16}
-        - {x: 16, y: 16}
-    - name: GelButton-9Grid_4
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: GelButton-9Grid_4
       rect:
         serializedVersion: 2
         x: 32
@@ -131,12 +124,10 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -16, y: 16}
-        - {x: -16, y: -16}
-        - {x: 16, y: -16}
-        - {x: 16, y: 16}
-    - name: GelButton-9Grid_5
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: GelButton-9Grid_5
       rect:
         serializedVersion: 2
         x: 64
@@ -146,12 +137,10 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -16, y: 16}
-        - {x: -16, y: -16}
-        - {x: 16, y: -16}
-        - {x: 16, y: 16}
-    - name: GelButton-9Grid_6
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: GelButton-9Grid_6
       rect:
         serializedVersion: 2
         x: 0
@@ -161,14 +150,10 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -16, y: 16}
-        - {x: -16, y: -7}
-        - {x: -11, y: -14}
-        - {x: -5, y: -16}
-        - {x: 16, y: -16}
-        - {x: 16, y: 16}
-    - name: GelButton-9Grid_7
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: GelButton-9Grid_7
       rect:
         serializedVersion: 2
         x: 32
@@ -178,12 +163,10 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -16, y: 16}
-        - {x: -16, y: -16}
-        - {x: 16, y: -16}
-        - {x: 16, y: 16}
-    - name: GelButton-9Grid_8
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: GelButton-9Grid_8
       rect:
         serializedVersion: 2
         x: 64
@@ -193,12 +176,8 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -16, y: 16}
-        - {x: -16, y: -16}
-        - {x: 7, y: -16}
-        - {x: 16, y: -11}
-        - {x: 16, y: 16}
+      outline: []
+      tessellationDetail: -1
     outline: []
   spritePackingTag: 
   userData: 

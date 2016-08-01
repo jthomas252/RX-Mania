@@ -6,7 +6,7 @@ using System.Text;
 namespace RX {
     public class DiseaseNameGenerator {
 
-        public string GetNewName() {
+        public static string GetNewName() {
             return null;
         }//GetNewName
     }//DiseaseNameGenerator
